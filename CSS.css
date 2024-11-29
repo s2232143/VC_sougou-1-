@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* 基本スタイルのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "serif";
+    line-height: 1.6;
+    background-color: #0B0B0B;
+    color: #fff;
+    padding: 20px;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #b22222; /* 焼肉のイメージに合った色 */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 70px; /* ロゴの幅を指定 */
+    height: auto; /* 高さは自動調整 */
+    margin-bottom: 10px;
+	 float: left;
+	margin-top: -20px; /* 10px 上に移動 */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.7em;
+}
+
+/* ナビゲーションのスタイル */
+nav {
+    background-color: #333;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+/* メインコンテンツのスタイル */
+.main_box {
+    display: flex;
+    justify-content: space-between;
+	text-align: center; /* 画像とテキストを中央揃え */
+}
+
+.main_box h1 {
+    color: #FFCD22;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* シャドウの設定 */
+}
+
+.main_box h2 {
+    color: #FF4444;
+}
+
+.menu_box {
+    display: flex;
+    justify-content: space-between;
+	text-align: center; /* 画像とテキストを中央揃え */
+}
+
+.menu_box section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.menu_box div {
+  text-align: center;
+}
+
+.menu_box img {
+  width: 500px; /* 画像の幅を調整 */
+  height: auto; /* 高さを自動調整 */
+}
+
+.menu_box h1 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* シャドウの設定 */
+}
+
+.service_box {
+	display: flex;
+    justify-content: space-between;
+	text-align: center; /* 画像とテキストを中央揃え */
+}
+
+.service_box img {
+  	width: 700px; /* 画像の幅を調整 */
+  	height: auto; /* 高さを自動調整 */
+}
+
+.service_box h1 {
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* シャドウの設定 */
+}
+
+.inquiry_box {
+	display: flex;
+    justify-content: space-between;
+	text-align: center; /* 画像とテキストを中央揃え */
+}
+
+.inquiry_box h1 {
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* シャドウの設定 */
+}
+
+.companyprofile_box {
+	display: flex;
+    justify-content: space-between;
+	text-align: center; /* 画像とテキストを中央揃え */
+}
+
+.companyprofile_box h1 {
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* シャドウの設定 */
+}
+
+main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+article {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pr{
+	background-color:#333;
+	float:left;
+	width:33%;
+}
+
+.video {
+	text-align: center;  /* 中央揃え */
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/* アサイド（サイドバー）のスタイル */
+.r_aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; 
+}
+
+footer address,
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* メディアクエリ（レスポンシブデザイン） */
+@media (max-width: 768px) {
+    .main_box {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
